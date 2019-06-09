@@ -1,0 +1,17 @@
+<!DOCTYLE HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>안녕하세요!</title>
+    <head>
+
+    <body>
+        <h1><a href="{%url 'about' %}">about</a></h1>
+        <h1>글자수 세는 사이트!</h1>
+        <form action="{% url 'count' %}">
+            <textarea cols="40" rows="10" name="fulltext"></textarea>
+            <br>
+            <input type="submit" value="Count!">
+        </form>
+    </body>
+</html>
