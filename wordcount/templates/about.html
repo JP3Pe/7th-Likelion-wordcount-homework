@@ -1,16 +1,12 @@
-<!DOCTYPE HTML>
+{% extends 'base.html' %}
 
-<html lang="ko">
-    <head>
-        <meta charset="utf-8">
-        <title>About</title>
-    </head>
+{% block content %}
 
-    <body>
-        <h1>About</h1>
-        <p>멋쟁이 사자처럼 김재광이 만든 작품입니다.</p>
-        <p>단어를 써 주세요.</p>
 
-        <a href="{% url 'home' %}">home 으로 가기</a>
-    </body>
-</html>
+    <h1>About</h1>
+    <p>멋쟁이 사자처럼 김재광이 만든 작품입니다.</p>
+    <p>단어를 써 주세요.</p>
+
+    <a href="{% url 'home' %}">home 으로 가기</a>
+
+{% endblock content %}
